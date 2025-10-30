@@ -1,0 +1,232 @@
+/* style.css - Portofolio sederhana untuk tugas akhir */
+/* Reset dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #2b6cb0;
+  --accent: #38a169;
+  --muted: #6b7280;
+  --bg: #f7fafc;
+  --card: #ffffff;
+  --container-width: 1100px;
+  --radius: 10px;
+  --gap: 18px;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* container */
+.container {
+  width: 92%;
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 28px 0;
+}
+
+/* header */
+.site-header {
+  background-color: var(--card);
+  box-shadow: 0 2px 8px rgba(15,23,42,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+}
+
+.brand h1 {
+  font-size: 20px;
+  letter-spacing: 0.4px;
+}
+
+.brand .role {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* nav */
+.main-nav a {
+  text-decoration: none;
+  margin-left: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #1f2937;
+  font-size: 14px;
+}
+.main-nav a:hover {
+  background-color: rgba(59,130,246,0.08);
+  color: var(--primary);
+}
+
+/* hero */
+.hero {
+  padding: 40px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 28px;
+  align-items: center;
+  background-color: var(--card);
+  padding: 28px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+
+.hero-text h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+}
+
+/* sections */
+.section {
+  margin-top: 28px;
+}
+
+.section h3 {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+/* cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(15,23,42,0.04);
+  border-left: 4px solid var(--primary);
+}
+.card h4 {
+  margin-bottom: 10px;
+}
+.card p {
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.link-btn {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primary);
+}
+
+/* skills */
+.skills-list {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.skills-list li {
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(15,23,42,0.03);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* form */
+.form-section .contact-form {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.04);
+  max-width: 640px;
+}
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-top: 10px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.btn-submit {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 18px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* footer */
+.site-footer {
+  margin-top: 36px;
+  padding: 20px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .main-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .brand h1 {
+    font-size: 18px;
+  }
+  .hero-text h2 {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio - Pamungkas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Pamungkas</h1>
+        <p class="role">Web Developer | Frontend | Film Producer</p>
+      </div>
+      <nav class="main-nav">
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Halo, saya Rakha Ukta Pamungkas</h2>
+        </div>
+        <div class="hero-image">
+          <img src="https://media.licdn.com/dms/image/v2/D5603AQEPp-Ez7lBlLA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723467885487?e=1763596800&v=beta&t=k7zugrhtmJoGIUrjCNzLiiWwuPZ2p7vvEmGfwiLnYA8" alt="foto profil">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h3>Tentang Saya</h3>
+      <p>Saya mahasiswa Teknik Informatika yang sedang memiliki konsentrasi pada Rekayasa Perangkat Lunak. Selain pada bidang teknologi, saya juga memiliki ketertarikan pada industri perfilman.</p>
+    </section>
+
+    <section id="projects" class="container section">
+      <h3>Proyek</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>"Meet Me Every 27th" Short Film</h4>
+          <p>Saya berperan sebagai Produser dari Short Film yang di produksi oleh CamPunk Production yang merupakan Production House Indie asal Lampung yang berhasil masuk ke dalam "Nominasi Film Lampung Terbaik" di Festival Film Lampung 2025.</p>
+        </article>
+
+        <article class="card">
+          <h4>Sistem Inventaris Dapur RSUP Sardjito Jogjakarta</h4>
+          <p>Saya berperan sebagai full stack developer pada Sistem Inventaris untuk peratalan dapur di RSUP Sardjito Jogjakarta, yang berfungsi untuk monitoring penggunaan alat dan bahan agar meminimalisir kehilangan.</p>
+        </article>
+
+        <article class="card">
+          <h4>Lampung Development Story</h4>
+          <p>Saya berperan sebagai Frontend Developer pada proyek website yang dituju kepada masyarakat agar bisa melihat sejarah pembangunan yang disusun secara kronologis.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container section">
+      <h3>Keahlian</h3>
+      <ul class="skills-list">
+      <li>HTML & CSS</li>
+      <li>Microsoft Excel & Word</li>
+      <li>Manajemen Proyek</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container section form-section">
+      <h3>Kontak/Hubungi Saya</h3>
+      <form action="#" method="POST" class="contact-form">
+        <label for="nama">Nama Lengkap *</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="4"></textarea>
+
+        <button type="submit" class="btn-submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Rakha Ukta Pamungkas. Dibuat sebagai tugas akhir pertemuan 1 praktikum Pemrograman Web.</p>
+    </div>
+  </footer>
+</body>
+</html>
