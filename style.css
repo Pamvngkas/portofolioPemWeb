@@ -1,5 +1,3 @@
-/* style.css - Portofolio sederhana untuk tugas akhir */
-/* Reset dasar */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,7 +22,6 @@ body {
   line-height: 1.6;
 }
 
-/* container */
 .container {
   width: 92%;
   max-width: var(--container-width);
@@ -33,7 +30,6 @@ body {
   padding: 28px 0;
 }
 
-/* header */
 .site-header {
   background-color: var(--card);
   box-shadow: 0 2px 8px rgba(15,23,42,0.06);
@@ -59,7 +55,6 @@ body {
   color: var(--muted);
 }
 
-/* nav */
 .main-nav a {
   text-decoration: none;
   margin-left: 14px;
@@ -73,7 +68,6 @@ body {
   color: var(--primary);
 }
 
-/* hero */
 .hero {
   padding: 40px 0;
 }
@@ -107,7 +101,6 @@ body {
   object-fit: cover;
 }
 
-/* sections */
 .section {
   margin-top: 28px;
 }
@@ -117,7 +110,6 @@ body {
   margin-bottom: 14px;
 }
 
-/* cards */
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -146,7 +138,6 @@ body {
   color: var(--primary);
 }
 
-/* skills */
 .skills-list {
   list-style: none;
   display: flex;
@@ -162,7 +153,6 @@ body {
   font-size: 14px;
 }
 
-/* form */
 .form-section .contact-form {
   background: var(--card);
   padding: 18px;
@@ -197,7 +187,6 @@ body {
   font-weight: 700;
 }
 
-/* footer */
 .site-footer {
   margin-top: 36px;
   padding: 20px 0;
@@ -206,7 +195,6 @@ body {
   font-size: 14px;
 }
 
-/* responsive */
 @media (max-width: 900px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -228,5 +216,52 @@ body {
   }
   .hero-text h2 {
     font-size: 22px;
+  }
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.mycontact-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.mycontact-section h3 {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.mycontact-card {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.04);
+}
+
+.mycontact-card p {
+  color: #000;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.mycontact-card a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.mycontact-card a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 }
